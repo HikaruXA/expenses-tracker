@@ -38,5 +38,9 @@
 } */
 
 .button:hover {
-  /* color: #555; */
+  color: #646cff;
+}
+.button:focus {
+  color: #535bf2;
+  /* outline: 4px auto -webkit-focus-ring-color; Custom focus ring */
 }
