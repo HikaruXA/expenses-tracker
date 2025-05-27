@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./partials/Landing/Hero";
 import Features from "./partials/Landing/Features";
 
-const Landing = () => {
+const Home = () => {
   return (
     <>
       <Hero />
@@ -11,4 +11,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Home;

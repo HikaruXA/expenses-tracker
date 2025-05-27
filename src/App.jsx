@@ -1,11 +1,14 @@
-import Features from "./pages/partials/Landing/Features";
-import Landing from "./pages/Landing";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./routes";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Landing />
+      <Router>
+        <AppRoutes />
+      </Router>
     </>
   );
 }

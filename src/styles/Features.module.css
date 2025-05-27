@@ -43,7 +43,7 @@
   padding: 1.5rem;
   position: relative;
   z-index: 1;
-  color: white;
+  /* color: white; */
 }
 
 .placeholder p {
