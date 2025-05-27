@@ -1,0 +1,39 @@
+.section {
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.heading {
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 2.5rem;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature {
+  border-radius: 12px;
+  box-shadow: none;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: left; /* Ensure individual feature blocks also align left */
+}
+
+.featureTitle {
+  margin-bottom: 0.5rem;
+}
+
+.featureText {
+  font-size: 1rem;
+}

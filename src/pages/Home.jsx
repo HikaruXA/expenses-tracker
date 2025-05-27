@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "./partials/Landing/Hero";
-import Features from "./partials/Landing/Features";
+import Hero from "./partials/Home/Hero";
+import Features from "./partials/Home/Features";
 
 const Home = () => {
   return (

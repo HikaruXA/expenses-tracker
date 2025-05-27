@@ -1,14 +1,8 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import LandingLayout from "./layouts/LandingLayout";
 import Home from "./pages/Home";
-import { Routes, Route } from "react-router-dom";
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/contact", label: "Contact" },
-];
+import About from "./pages/About";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +12,14 @@ const AppRoutes = () => {
         element={
           <LandingLayout>
             <Home />
+          </LandingLayout>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <LandingLayout>
+            <About />
           </LandingLayout>
         }
       />
