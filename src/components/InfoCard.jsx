@@ -8,7 +8,7 @@ const InfoCard = ({ title, description, onClick }) => {
       <p className={styles.description}>{description}</p>
       <div className={styles.buttonContainer}>
         <button className={styles.button} onClick={onClick}>
-          <p>Show →</p>
+          Show →
         </button>
       </div>
     </div>

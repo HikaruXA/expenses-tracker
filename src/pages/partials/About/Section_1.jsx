@@ -1,4 +1,5 @@
 import React from "react";
+import InfoCard from "../../../components/InfoCard";
 import styles from "../../../styles/Section_1.module.css";
 
 const Section_1 = () => {
@@ -12,25 +13,33 @@ const Section_1 = () => {
           to turn ideas into reality through innovative solutions and
           cutting-edge technology.
         </p>
-        <div className={styles.features}>
-          <div className={styles.feature}>
-            <p className={styles.featureTitle}>Innovation</p>
-            <p className={styles.featureText}>
-              We thrive on creativity and new ideas.
-            </p>
-          </div>
-          <div className={styles.feature}>
-            <p className={styles.featureTitle}>Teamwork</p>
-            <p className={styles.featureText}>
-              Collaboration is at the core of everything we do.
-            </p>
-          </div>
-          <div className={styles.feature}>
-            <p className={styles.featureTitle}>Impact</p>
-            <p className={styles.featureText}>
-              We aim to make a meaningful difference.
-            </p>
-          </div>
+        <div
+          className={styles.rectangle}
+          style={{
+            backgroundImage:
+              'url("https://d1hdtc0tbqeghx.cloudfront.net/wp-content/uploads/2024/03/01115727/Best-About-Us-Page-Examples-1024x528.jpg")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            color: "#fff", // optional: for better text contrast on image
+          }}
+        ></div>
+        <div className={styles.grid3x2}>
+          <InfoCard
+            title="Innovation"
+            description="We thrive on creativity and new ideas."
+            onClick={() => setSelectedFeature("innovation")}
+          />
+          <InfoCard
+            title="Teamwork"
+            description="Collaboration is at the core of everything we do."
+            onClick={() => setSelectedFeature("teamwork")}
+          />
+          <InfoCard
+            title="Impact"
+            description="We aim to make a meaningful difference."
+            onClick={() => setSelectedFeature("impact")}
+          />
         </div>
       </div>
     </section>

@@ -12,6 +12,17 @@ const Section_1 = () => {
           support, we deliver tailored solutions that drive results for your
           business.
         </p>
+        <div
+          className={styles.rectangle}
+          style={{
+            backgroundImage:
+              'url("https://webonlinestudio.com/img/slider/Web-Development-Services-.jpg")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            color: "#fff", // optional: for better text contrast on image
+          }}
+        ></div>
         <div className={styles.features}>
           <div className={styles.feature}>
             <p className={styles.featureTitle}>Web Development</p>
