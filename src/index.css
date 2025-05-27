@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Default = dark mode */
 a {
   font-weight: 500;
   color: white;
@@ -54,14 +55,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Light mode override */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
+
+  a {
+    color: #000000; /* Black links in light mode */
+  }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
